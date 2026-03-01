@@ -32,13 +32,13 @@ export default function Contact() {
     <section id="contact" className="py-24 relative bg-black/40" ref={sectionRef}>
       <div className="container mx-auto px-6 max-w-5xl text-center">
         <h2 className="contact-item text-3xl md:text-5xl font-bold mb-6">
-          <span className="text-gradient">05.</span> What's Next?
+          <span className="text-gradient">05.</span> What&apos;s Next?
         </h2>
         <h3 className="contact-item text-4xl md:text-6xl font-bold text-white mb-8">
           Get In Touch
         </h3>
         <p className="contact-item text-gray-400 text-lg max-w-2xl mx-auto mb-16 leading-relaxed">
-          Whether you have an exciting project, a question regarding 3D animated assets, or just want to say hi, I'll try my best to get back to you!
+          Whether you have an exciting project, a question regarding 3D animated assets, or just want to say hi, I&apos;ll try my best to get back to you!
         </p>
 
         <div className="contact-item grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">

@@ -1,114 +1,163 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+import { Database, Gauge, Layers3, ServerCog, Sparkle } from "lucide-react";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const skillCategories = [
+const capabilities = [
   {
-    title: "Web Development",
-    skills: [
-      { name: "HTML & CSS", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "React & Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 95 },
-    ]
+    title: "Frontend Systems",
+    summary: "Fast, scalable interfaces built for conversion and maintainability.",
+    impact: "Component architecture + motion strategy",
+    icon: Layers3,
+    tools: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "3D Animation (Blender Expert)",
-    skills: [
-      { name: "3D Modeling", level: 98 },
-      { name: "Animation & Rigging", level: 95 },
-      { name: "Texturing & Lighting", level: 90 },
-      { name: "Fiverr Success (>300 Clients)", level: 100 },
-    ]
+    title: "Backend & Data",
+    summary: "Stable APIs and data models ready for SaaS growth and integration.",
+    impact: "Structured service layer + predictable contracts",
+    icon: ServerCog,
+    tools: ["Node.js", "Express", "REST", "PostgreSQL"],
   },
   {
-    title: "Graphic Design & Video",
-    skills: [
-      { name: "Adobe Photoshop", level: 90 },
-      { name: "Adobe Illustrator", level: 85 },
-      { name: "Premiere Pro", level: 75 },
-    ]
-  }
+    title: "Performance Engineering",
+    summary: "Monitoring and optimization that improve real product responsiveness.",
+    impact: "Up to 40% gains on key performance paths",
+    icon: Gauge,
+    tools: ["Core Web Vitals", "Code Splitting", "Caching", "Profiling"],
+  },
+];
+
+const stack = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "PostgreSQL",
+  "Prisma",
+  "Tailwind CSS",
+  "Framer Motion",
+  "GSAP",
+  "Figma",
+  "Vercel",
+];
+
+const highlights = [
+  { label: "Scalable Architecture", value: "System-first coding standards" },
+  { label: "Shipping Velocity", value: "Rapid iteration without quality loss" },
+  { label: "Product Thinking", value: "Engineering choices tied to business goals" },
 ];
 
 export default function Skills() {
-  const sectionRef = useRef(null);
-  
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Animate category cards
-      gsap.from(".skill-category", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power2.out",
-      });
-
-      // Animate skill bars inside each category
-      gsap.utils.toArray(".skill-progress").forEach((bar) => {
-        const width = bar.getAttribute("data-width");
-        gsap.to(bar, {
-          scrollTrigger: {
-            trigger: bar,
-            start: "top 90%",
-          },
-          width: `${width}%`,
-          duration: 1.5,
-          ease: "power3.out",
-          delay: 0.2
-        });
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section id="skills" className="py-24 relative bg-black/20" ref={sectionRef}>
-      <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center justify-center">
-          <span className="text-gradient">02.</span>
-          <span className="ml-4">My Skills</span>
-        </h2>
+    <section id="skills" aria-labelledby="skills-heading" className="relative py-20 sm:py-24">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_8%_18%,rgba(34,211,238,0.1),transparent_33%),radial-gradient(circle_at_86%_75%,rgba(167,139,250,0.1),transparent_35%)]" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="skill-category glass-panel p-8 rounded-2xl flex flex-col h-full">
-              <h3 className="text-xl font-bold text-white mb-6 pb-4 border-b border-gray-700/50">
-                {category.title}
-              </h3>
-              
-              <div className="space-y-6 flex-grow">
-                {category.skills.map((skill, sIdx) => (
-                  <div key={sIdx} className="w-full">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-gray-500 text-sm">{skill.level}%</span>
-                    </div>
-                    <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
-                      <div 
-                        className="skill-progress h-full bg-gradient-to-r from-primary to-accent relative"
-                        data-width={skill.level}
-                        style={{ width: "0%" }}
-                      >
-                         <div className="absolute top-0 right-0 bottom-0 w-8 bg-white/20 blur-[2px]"></div>
-                      </div>
-                    </div>
-                  </div>
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-12 flex items-center justify-between gap-4"
+        >
+          <div>
+            <p className="text-sm uppercase tracking-[0.2em] text-cyan-200/90">Skills</p>
+            <h2
+              id="skills-heading"
+              className="mt-2 max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-text-primary sm:text-5xl"
+            >
+              Capability stack for modern SaaS and AI product delivery.
+            </h2>
+          </div>
+          <span className="hidden rounded-full border border-border-subtle bg-card-background px-4 py-2 text-xs uppercase tracking-[0.14em] text-text-secondary md:inline-flex md:items-center md:gap-2">
+            <Sparkle className="h-3.5 w-3.5 text-cyan-200" />
+            Production-focused
+          </span>
+        </motion.div>
+
+        <div className="grid gap-6 lg:grid-cols-12">
+          {capabilities.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <motion.article
+                key={item.title}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.65,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: index * 0.08,
+                }}
+                whileHover={{ y: -4 }}
+                className="group relative overflow-hidden rounded-3xl border border-border-subtle bg-card-background p-6 backdrop-blur sm:p-7 lg:col-span-4"
+              >
+                <div className="pointer-events-none absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-cyan-300/10 blur-2xl" />
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="rounded-xl border border-border-subtle bg-background-secondary/60 p-2.5 text-accent-primary">
+                    <Icon className="h-4 w-4" />
+                  </span>
+                  <h3 className="text-lg font-semibold text-text-primary">{item.title}</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-text-secondary">{item.summary}</p>
+                <p className="mt-4 text-xs uppercase tracking-[0.14em] text-muted-text">Impact</p>
+                <p className="mt-1 text-sm text-text-secondary">{item.impact}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {item.tools.map((tool) => (
+                    <span
+                      key={tool}
+                      className="rounded-full border border-border-subtle bg-card-background px-3 py-1 text-xs font-medium text-text-secondary"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </motion.article>
+            );
+          })}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1], delay: 0.12 }}
+          className="mt-8 rounded-3xl border border-border-subtle bg-card-background p-6 sm:p-7"
+        >
+          <div className="grid gap-6 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <p className="text-xs uppercase tracking-[0.16em] text-muted-text">Tech Stack</p>
+              <div className="mt-4 flex flex-wrap gap-2.5">
+                {stack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-border-subtle bg-card-background px-3 py-1.5 text-xs font-medium text-text-primary"
+                  >
+                    {tech}
+                  </span>
                 ))}
               </div>
             </div>
-          ))}
-        </div>
+
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl border border-border-subtle bg-card-background p-4">
+                <p className="mb-3 flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted-text">
+                  <Database className="h-4 w-4 text-cyan-200" />
+                  Delivery strengths
+                </p>
+                <div className="space-y-2.5">
+                  {highlights.map((point) => (
+                    <div key={point.label} className="rounded-lg border border-border-subtle bg-background-secondary/60 p-3">
+                      <p className="text-xs uppercase tracking-[0.14em] text-muted-text">{point.label}</p>
+                      <p className="mt-1 text-sm text-text-secondary">{point.value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

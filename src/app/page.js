@@ -3,9 +3,9 @@ import About from "@/components/About";
 import SocialLinks from "@/components/SocialLinks";
 
 import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+import EducationSection from "@/components/EducationSection";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -14,9 +14,9 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
+      <EducationSection />
+      <FeaturedProjects />
+      <ContactSection />
     </>
   );
 }

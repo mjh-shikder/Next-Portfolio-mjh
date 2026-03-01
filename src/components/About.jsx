@@ -1,66 +1,137 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+import { ArrowUpRight, BriefcaseBusiness, LayoutTemplate, Rocket } from "lucide-react";
 
-gsap.registerPlugin(ScrollTrigger);
+const journey = [
+  {
+    year: "2020-2024",
+    title: "3D & Creative Specialist",
+    detail: "Delivered 300+ global projects with precision in visual storytelling and client execution.",
+  },
+  {
+    year: "2024-Present",
+    title: "Product Engineer",
+    detail: "Building production web platforms with React, Next.js, Node.js, and performance-first architecture.",
+  },
+];
+
+const proofCards = [
+  {
+    icon: BriefcaseBusiness,
+    label: "Production Builds",
+    value: "15+ launched apps",
+  },
+  {
+    icon: Rocket,
+    label: "Performance Focus",
+    value: "Up to 40% improvement",
+  },
+  {
+    icon: LayoutTemplate,
+    label: "Engineering Style",
+    value: "Clean, scalable systems",
+  },
+];
 
 export default function About() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".about-content", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power3.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section id="about" className="py-24 relative" ref={sectionRef}>
-      <div className="container mx-auto px-6 max-w-5xl">
-        <h2 className="about-content text-3xl md:text-5xl font-bold mb-12 flex items-center">
-          <span className="text-gradient">01.</span>
-          <span className="ml-4">About Me</span>
-          <div className="ml-6 flex-grow h-px bg-gray-700/50"></div>
-        </h2>
+    <section id="about" aria-labelledby="about-heading" className="relative py-20 sm:py-24">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_20%,rgba(56,189,248,0.11),transparent_32%),radial-gradient(circle_at_80%_75%,rgba(167,139,250,0.12),transparent_34%)]" />
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-            <p className="about-content">
-              My journey into the digital world started with a profound interest in bringing static elements to life. Between 2020 and 2024, I thrived as a <strong className="text-white">Professional 3D Animator</strong> and a Level 2 Fiverr seller, collaborating with over 300 clients worldwide.
-            </p>
-            <p className="about-content">
-              While I loved modeling and rendering with Blender and perfecting compositions in Adobe Photoshop, Illustrator, and Premiere Pro, I found my true calling in Web Development. This transition allowed me to combine my aesthetic design sense with logic to build interactive, functional user experiences.
-            </p>
-            <p className="about-content">
-              Today, I focus on crafting scalable Web Applications utilizing <strong className="text-primary">Next.js</strong>, React, and modern motion libraries. I enjoy projects that challenge both my technical problem-solving skills and my creative vision.
-            </p>
-            <p className="about-content">
-              Outside of programming, you can often find me exploring new Graphic Design techniques, watching animated films (evaluating their 3D mechanics, of course!), or continuously pushing my artistic boundaries.
-            </p>
-          </div>
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-12 flex items-center gap-5"
+        >
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-200/90">About</p>
+          <h2
+            id="about-heading"
+            className="text-3xl font-semibold tracking-[-0.02em] text-text-primary sm:text-5xl"
+          >
+            Building products where design intelligence meets engineering rigor.
+          </h2>
+        </motion.div>
 
-          <div className="about-content relative group hidden md:block mt-8">
-            <div className="absolute inset-0 border-2 border-primary rounded-xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 z-0"></div>
-            <div className="relative z-10 glass-panel rounded-xl h-full flex flex-col justify-center items-center p-8 text-center border border-gray-700 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300 bg-black/40">
-              <div className="w-20 h-20 rounded-full border border-primary/50 flex items-center justify-center mb-6 text-primary shadow-[0_0_15px_rgba(139,92,246,0.3)]">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+        <div className="grid gap-8 lg:grid-cols-12">
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+            className="relative overflow-hidden rounded-3xl border border-border-subtle bg-card-background p-7 backdrop-blur md:p-9 lg:col-span-7"
+          >
+            <div className="pointer-events-none absolute -right-10 -top-14 h-36 w-36 rounded-full bg-cyan-300/10 blur-3xl" />
+            <p className="text-sm uppercase tracking-[0.18em] text-muted-text">My Approach</p>
+            <p className="mt-5 text-pretty text-base leading-relaxed text-text-secondary sm:text-lg">
+              I started in visual production, where details, timing, and story quality decide whether a result feels
+              premium. That background now shapes how I engineer web products: clarity in architecture, speed in
+              interaction, and maintainability from day one.
+            </p>
+            <p className="mt-5 text-pretty text-base leading-relaxed text-text-secondary sm:text-lg">
+              My current focus is SaaS and AI-powered applications that need strong frontend performance and dependable
+              backend structures. I work from product outcomes backward, so decisions in code directly support growth,
+              reliability, and business impact.
+            </p>
+            <a
+              href="#projects"
+              aria-label="Explore selected projects"
+              className="mt-7 inline-flex items-center gap-2 rounded-lg border border-border-subtle px-4 py-2 text-sm text-text-primary transition-colors duration-300 hover:border-accent-primary/50 hover:text-accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary/70"
+            >
+              Explore selected projects <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </motion.article>
+
+          <div className="space-y-6 lg:col-span-5">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.12 }}
+              className="rounded-3xl border border-border-subtle bg-card-background p-6"
+            >
+              <p className="text-sm uppercase tracking-[0.16em] text-muted-text">Journey</p>
+              <div className="mt-4 space-y-4">
+                {journey.map((item) => (
+                  <div key={item.title} className="rounded-xl border border-border-subtle bg-card-background p-4">
+                    <p className="text-xs uppercase tracking-[0.15em] text-cyan-200/85">{item.year}</p>
+                    <h3 className="mt-2 text-base font-semibold text-text-primary">{item.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-text-secondary">{item.detail}</p>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">Creative & Logical</h3>
-              <p className="text-gray-400">Transforming artistic vision into robust code.</p>
-            </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.18 }}
+              className="grid gap-4"
+            >
+              {proofCards.map((card) => {
+                const Icon = card.icon;
+                return (
+                  <div
+                    key={card.label}
+                    className="group rounded-2xl border border-border-subtle bg-card-background p-4 transition-colors duration-300 hover:border-accent-primary/45"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="rounded-lg border border-border-subtle bg-card-background p-2 text-accent-primary">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <div>
+                        <p className="text-xs uppercase tracking-[0.14em] text-muted-text">{card.label}</p>
+                        <p className="text-sm font-medium text-text-primary">{card.value}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </motion.div>
           </div>
         </div>
       </div>
