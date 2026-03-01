@@ -3,9 +3,11 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import ThemeToggleButton from "@/components/theme/ThemeToggleButton";
+import { useTheme } from "@/components/theme/ThemeProvider";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -39,7 +41,13 @@ export default function Navbar() {
               className="flex cursor-pointer items-center gap-2"
               onClick={(event) => handleLinkClick(event, "#home")}
             >
-              <Image src="/mjhLogo.png" alt="MJH logo" width={44} height={44} />
+              <Image
+                src={resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
+                alt="MJH logo"
+                width={44}
+                height={44}
+                priority
+              />
             </button>
 
             <ul className="hidden items-center gap-7 md:flex">
