@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Facebook, Linkedin, Mail } from "lucide-react";
 
 const links = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/mjh-dev", icon: Linkedin },
-  { label: "GitHub", href: "https://github.com/mjh-dev", icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/mjh-shikder/", icon: Linkedin },
+  { label: "Facebook", href: "https://www.facebook.com/mjhshikder/", icon: Facebook },
+  { label: "GitHub", href: "https://github.com/mjh-shikder", icon: Github },
   { label: "Email", href: "mailto:mjh.dev.bd@gmail.com", icon: Mail },
 ];
 
