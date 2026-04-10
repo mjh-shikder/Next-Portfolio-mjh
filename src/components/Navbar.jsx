@@ -34,7 +34,7 @@ export default function Navbar() {
     <div className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "pt-2" : "pt-8"}`}>
       <header className="relative z-10 px-4">
         <div className="mx-auto max-w-6xl">
-          <nav className="glass-panel flex items-center justify-between rounded-full px-6 py-3">
+          <nav className="glass-panel flex items-center justify-between rounded-full backdrop-blur-sm saturate-150 px-6 py-3">
             <button
               type="button"
               aria-label="Scroll to home"

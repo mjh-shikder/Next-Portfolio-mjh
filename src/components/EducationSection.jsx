@@ -33,6 +33,14 @@ const educationItems = [
 
 const certifications = [
   {
+    title: "Next Level Web Development",
+    issuer: "Programming Hero",
+    year: "Present",
+    verified: true,
+    link: "",
+    focus: "Advanced full-stack engineering, AI-Driven Software Engineering, system design, and production-grade architecture.",
+  },
+  {
     title: "Complete Web Development",
     issuer: "Programming Hero",
     year: "2025-2026",
@@ -111,7 +119,7 @@ export default function EducationSection() {
               id="education-heading"
               className="max-w-4xl text-3xl font-semibold tracking-[-0.02em] text-text-primary sm:text-5xl"
             >
-              Foundation-driven learning with real-world, production-focused outcomes.
+              Foundation driven learning with real world, production focused outcomes.
             </h2>
             <span className="inline-flex items-center gap-2 rounded-full border border-cyan-300/35 bg-cyan-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.14em] text-cyan-100">
               <Medal className="h-3.5 w-3.5" />
