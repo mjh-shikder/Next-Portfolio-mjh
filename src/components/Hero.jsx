@@ -64,7 +64,7 @@ export default function Hero() {
             >
               <span className="block text-text-primary">Md Jubair Hossain</span>
               <span className="mt-2 block bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent">
-                React & Next.js Engineer
+                React & Next.js Developer
               </span>
               <span className="mt-2 block text-text-secondary">
                 building high-performance SaaS & AI-powered web applications.

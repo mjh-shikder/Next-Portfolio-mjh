@@ -88,7 +88,7 @@ export async function POST(request) {
       SMTP_SECURE,
       SMTP_USER,
       SMTP_PASS,
-    } = process.env;
+    } = process.env.local;
 
     const canUseGmail = Boolean(GMAIL_USER && GMAIL_APP_PASSWORD);
     const canUseSmtp = Boolean(SMTP_HOST && SMTP_PORT && SMTP_USER && SMTP_PASS);

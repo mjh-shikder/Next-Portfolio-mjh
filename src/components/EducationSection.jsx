@@ -20,6 +20,15 @@ const educationItems = [
     honors: "Academic consistency while parallelly delivering production software projects.",
     coursework: ["Social Research Methods", "Community Development", "Public Policy Basics"],
   },
+  {
+    degree: "HSC, Humanities",
+    institution: "Govt Shaheed Suhrawardy College",
+    year: "2023",
+    specialization: "Dhaka Board",
+    honors: "Intermediate and Secondary Education Boards Bangladesh Examination",
+    coursework: ["Social Work", "Economics", "Logic", "Civics"],
+  },
+
 ];
 
 const certifications = [
