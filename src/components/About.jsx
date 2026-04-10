@@ -5,13 +5,18 @@ import { ArrowUpRight, BriefcaseBusiness, LayoutTemplate, Rocket } from "lucide-
 
 const journey = [
   {
-    year: "2020-2024",
+    year: "2020-2023",
     title: "3D & Creative Specialist",
-    detail: "Delivered 300+ global projects with precision in visual storytelling and client execution.",
+    detail: "Delivered 350+ global 3D Logo and Product Animation projects. With 4.9 Star Rating on Fiverr Level 2 Seller.",
   },
   {
-    year: "2024-Present",
-    title: "Product Engineer",
+    year: "2024-2025",
+    title: "Learing Fundamental of Cyber Security & Ethical Hacking, Web Penetration Testing, Networking ",
+    detail: "Focued on learning and exploring the fundamentals of Cyber Security & Ethical Hacking, Web technologies, Web Penetration Testing and Networking ",
+  },
+  {
+    year: "2025-Present",
+    title: "Web App Developer",
     detail: "Building production web platforms with React, Next.js, Node.js, and performance-first architecture.",
   },
 ];
@@ -20,7 +25,7 @@ const proofCards = [
   {
     icon: BriefcaseBusiness,
     label: "Production Builds",
-    value: "15+ launched apps",
+    value: "20+ launched apps",
   },
   {
     icon: Rocket,
@@ -72,7 +77,7 @@ export default function About() {
               interaction, and maintainability from day one.
             </p>
             <p className="mt-5 text-pretty text-base leading-relaxed text-text-secondary sm:text-lg">
-              My current focus is SaaS and AI-powered applications that need strong frontend performance and dependable
+              My current focus is AI-powered web applications that need strong frontend performance and dependable
               backend structures. I work from product outcomes backward, so decisions in code directly support growth,
               reliability, and business impact.
             </p>
