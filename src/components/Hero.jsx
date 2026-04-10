@@ -67,7 +67,7 @@ export default function Hero() {
                 React & Next.js Developer
               </span>
               <span className="mt-2 block text-text-secondary">
-                building high-performance SaaS & AI-powered web applications.
+                building high performance SaaS & AI-powered web applications.
               </span>
             </motion.h1>
 

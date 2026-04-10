@@ -7,14 +7,16 @@ import {
   Github,
   Linkedin,
   Mail,
-  Send,
+  Send
+  
+ 
 } from "lucide-react";
 
 const projectTypes = [
-  "SaaS Product",
+  // "SaaS Product",
   "AI-Powered Web App",
+  "Ecommerce Website",
   "Performance Optimization",
-  "Frontend Architecture",
   "Other",
 ];
 
@@ -28,13 +30,13 @@ const contactMethods = [
   {
     label: "LinkedIn",
     value: "Connect professionally",
-    href: "https://www.linkedin.com/in/mjh-dev",
+    href: "https://www.linkedin.com/in/mjh-shikder/",
     icon: Linkedin,
   },
   {
     label: "GitHub",
-    value: "github.com/mjh-dev",
-    href: "https://github.com/mjh-dev",
+    value: "github.com/mjh-shikder",
+    href: "https://github.com/mjh-shikder",
     icon: Github,
   },
   {
@@ -42,7 +44,8 @@ const contactMethods = [
     value: "Book a strategy call",
     href: "https://calendly.com/mjh-dev",
     icon: CalendarClock,
-  },
+  }
+
 ];
 
 const containerVariants = {
