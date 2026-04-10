@@ -67,7 +67,7 @@ export default function Skills() {
               id="skills-heading"
               className="mt-2 max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-text-primary sm:text-5xl"
             >
-              Capability stack for modern SaaS and AI product delivery.
+              Capability stack for modern Web Applications.
             </h2>
           </div>
           <span className="hidden rounded-full border border-border-subtle bg-card-background px-4 py-2 text-xs uppercase tracking-[0.14em] text-text-secondary md:inline-flex md:items-center md:gap-2">
