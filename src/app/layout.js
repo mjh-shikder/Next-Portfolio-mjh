@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
-import Navbar from "@/components/Navbar";
+import NavbarWrapper from "@/components/NavbarWrapper";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <SmoothScroll>
-            <Navbar />
+            <NavbarWrapper />
             <main className="flex-grow">
               {children}
             </main>

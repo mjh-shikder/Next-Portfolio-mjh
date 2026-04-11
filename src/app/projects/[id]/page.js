@@ -18,10 +18,15 @@ export default async function ProjectDetails({ params }) {
     if (!project) return notFound();
 
     return (
-        <div className="py-24 min-h-screen">
-            <div className="container mx-auto px-6 max-w-4xl">
+        <div className="relative min-h-screen overflow-hidden">
+            {/* Ambient background */}
+            <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_12%_15%,rgba(34,211,238,0.09),transparent_38%),radial-gradient(circle_at_82%_78%,rgba(167,139,250,0.11),transparent_40%)]" />
+            <div className="pointer-events-none fixed -left-24 top-32 -z-10 h-80 w-80 rounded-full bg-cyan-400/8 blur-[140px]" />
+            <div className="pointer-events-none fixed -right-24 bottom-20 -z-10 h-80 w-80 rounded-full bg-violet-400/8 blur-[140px]" />
+
+            <div className="container mx-auto px-6 py-24 max-w-4xl">
                 <Link
-                    href="/#projects"
+                    href="/projects"
                     className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-12"
                 >
                     <ArrowLeft size={20} className="mr-2" />

@@ -63,7 +63,7 @@ export default function Hero() {
               className="max-w-3xl text-balance text-[2.4rem] font-semibold leading-[1.04] tracking-[-0.03em] text-text-primary sm:text-6xl lg:text-7xl"
             >
               <span className="block text-text-primary">Md Jubair Hossain</span>
-              <span className="mt-2 block bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent">
+              <span className="mt-2 block bg-gradient-to-r from-cyan-400 via-sky-500 to-violet-800 bg-clip-text text-transparent">
                 React & Next.js Developer
               </span>
               <span className="mt-2 block text-text-secondary">
@@ -85,7 +85,7 @@ export default function Hero() {
               className="mt-8 flex flex-wrap gap-3 text-sm text-text-secondary"
             >
               <span className="rounded-full border border-border-subtle bg-card-background px-4 py-2">
-                Built 15+ production apps
+                Built 20+ production apps
               </span>
               <span className="rounded-full border border-border-subtle bg-card-background px-4 py-2">
                 Optimized performance up to 40%

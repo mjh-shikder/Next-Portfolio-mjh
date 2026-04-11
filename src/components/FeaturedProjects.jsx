@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 
+// Featured Projects Data
 const caseStudies = [
   {
     id: "1",
@@ -249,7 +250,7 @@ export default function FeaturedProjects() {
           className="mt-12 text-center"
         >
           <Link
-            href="/#projects"
+            href="/projects"
             aria-label="Explore all projects"
             className="inline-flex items-center gap-2 rounded-2xl border border-cyan-300/35 bg-gradient-to-r from-cyan-300/12 to-violet-300/12 px-7 py-3.5 text-sm font-medium text-cyan-100 shadow-[0_0_0_rgba(34,211,238,0)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/80"
           >

@@ -7,6 +7,7 @@ import EducationSection from "@/components/EducationSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import ContactSection from "@/components/ContactSection";
 
+
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <EducationSection />
       <FeaturedProjects />
+
       <ContactSection />
       
     </>
