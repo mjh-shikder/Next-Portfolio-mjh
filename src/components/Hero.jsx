@@ -67,7 +67,7 @@ export default function Hero() {
                 React & Next.js Developer
               </span>
               <span className="mt-2 block text-text-secondary">
-                building high performance SaaS & AI-powered web applications.
+                Building High Performance Web Applications
               </span>
             </motion.h1>
 
@@ -180,7 +180,7 @@ export default function Hero() {
           <div className="mt-5 grid gap-4 text-sm text-text-secondary sm:grid-cols-3">
             <div className="rounded-xl border border-border-subtle bg-card-background p-4">
               <p className="text-[11px] uppercase tracking-[0.14em] text-muted-text">Delivery</p>
-              <p className="mt-1 text-lg font-semibold text-text-primary">15+ Apps</p>
+              <p className="mt-1 text-lg font-semibold text-text-primary">20+ Apps</p>
             </div>
             <div className="rounded-xl border border-border-subtle bg-card-background p-4">
               <p className="text-[11px] uppercase tracking-[0.14em] text-muted-text">

@@ -13,7 +13,7 @@ import {
 
 const educationItems = [
   {
-    degree: "Honors (1st Year), Social Work",
+    degree: "Honors, Social Work",
     institution: "National University Bangladesh, Abu Dharr Ghifari College",
     year: "Ongoing",
     specialization: "Building strong social research foundations with analytical thinking.",
