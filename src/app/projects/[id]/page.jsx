@@ -71,19 +71,41 @@ export default async function ProjectDetails({ params }) {
 
                 {/* Feature Image Placeholder */}
                 <div className="w-full h-64 md:h-96 bg-gray-800 rounded-2xl mb-16 relative overflow-hidden flex items-center justify-center border border-gray-700">
-                    <span className="text-gray-500 font-medium">Project Cover Image Here</span>
+                    <Image src={project.image} alt={project.title} fill className="object-cover object-top transition-transform duration-500 ease-out hover:object-bottom" />
                 </div>
 
                 {/* Content */}
                 <div className="grid md:grid-cols-3 gap-12">
                     <div className="md:col-span-2 space-y-12">
+                        {/* Overview */}
                         <div>
                             <h2 className="text-2xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Overview</h2>
                             <p className="text-gray-400 leading-relaxed text-lg">
                                 {project.description}
                             </p>
                         </div>
-
+                    {/* Feature */}
+                        <div>
+                            <h2 className="text-2xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Key Features</h2>
+                            <p className="text-gray-400 leading-relaxed text-lg">
+                                {project.features}
+                                <ul className="list-disc list-inside" >
+                                    <li>Role based authentication and authorization</li>
+                                    <li>Admin Dashboard to manage blood Users</li>
+                                    <li>Admin can block and unblock users</li>
+                                    <li>Admin can make users as Volunteer or Admin</li>
+                                    <li>Donor Dashboard to manage blood requests</li>
+                                    <li>User can register and login</li>
+                                    <li>User can search for blood donors</li>
+                                    <li>Filter search donors by blood group and Location</li>
+                                    <li>User can request blood</li>
+                                    <li>User can donate blood </li>
+                                    <li>User can Edit their profile</li>
+                                    
+                                </ul>
+                            </p>
+                        </div>
+                        {/* Challenges */}
                         <div>
                             <h2 className="text-2xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Challenges Faced</h2>
                             <p className="text-gray-400 leading-relaxed text-lg">
@@ -106,7 +128,7 @@ export default async function ProjectDetails({ params }) {
                         </div>
                         <div>
                             <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Timeline</h3>
-                            <p className="text-white font-medium">4 Weeks</p>
+                            <p className="text-white font-medium">2 Weeks</p>
                         </div>
                         <div>
                             <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Key Focus</h3>

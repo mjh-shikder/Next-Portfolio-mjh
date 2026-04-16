@@ -1,15 +1,15 @@
 export const demoProjects = [
     {
         id: "1",
-        title: "E-Commerce Platform Redesign",
-        tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-        shortDesc: "A complete overhaul of an e-commerce platform focusing on user experience and conversion rates.",
-        description: "This project involved completely redesigning a legacy e-commerce site to meet modern web standards. By introducing a Next.js App Router architecture and utilizing Next.js API Routes for backend integration, we reduced load times by 40%. The UI heavily depends on Tailwind CSS for rapid styling and Framer Motion for delightful micro-interactions that guide users to purchase.",
-        image: "/project-1.jpg",
-        liveLink: "https://example.com/ecommerce",
-        githubLink: "https://github.com/mjh-dev/ecommerce-redesign",
-        challenges: "Handling the complex state synchronization between the shopping cart and local storage while ensuring accurate stock validation on the server side.",
-        futurePlans: "Integrating Stripe for native payments and adding an AI-based product recommendation algorithm."
+        title: "Red Hope Blood Donation Platform",
+        tech: ["React", "React-Router", "Axios", "Tailwind CSS", "Firebase", "Node API"],
+        shortDesc: "A blood donation platform that connects blood donors with those in need of blood.",
+        description: "This project is a blood donation platform that connects blood donors with those in need of blood. It is a full-stack application that allows users to register as blood donors or request blood. It also has a feature that allows users to search for blood donors based on their blood group and location.",
+        image: "/images/redhope.png",
+        liveLink: "https://dulcet-biscotti-7b5c0b.netlify.app/",
+        githubLink: "https://github.com/mjh-shikder/A-11-Red-Hope-Front-end",
+        challenges: "The main challenge was to create a user-friendly interface that could be used by people of all ages. I also had to make sure that the website was responsive and could be used on different devices. Additionally, I had to make sure that the website was secure and that the data was protected.",
+        futurePlans: "Want to add more features like user authentication, blood bank integration, and a mobile app."
     },
     {
         id: "2",

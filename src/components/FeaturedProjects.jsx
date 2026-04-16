@@ -9,25 +9,25 @@ import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 const caseStudies = [
   {
     id: "1",
-    name: "E-Commerce Platform Redesign",
-    tagline: "Conversion-focused storefront architecture for faster buying journeys.",
+    name: "Red Hope Blood Donation Platform",
+    tagline: "A comprehensive blood donation platform connecting donors with recipients, ensuring timely and efficient blood supply to those in need.",
     summary: [
-      "Problem: Legacy storefront had slow load time and weak checkout completion.",
-      "Solution: Rebuilt with Next.js App Router, modular UI system, and optimized data flow.",
-      "Technologies: Next.js, Tailwind CSS, Framer Motion, API Routes.",
-      "Impact: 40% faster page load and improved conversion quality through better UX flow.",
+      "Problem: Lack of a centralized blood donation platform in Bangladesh",
+      "Solution: Developed a comprehensive blood donation platform",
+      "Technologies: React, React-Router, Axios, Tailwind CSS, Firebase, Node API",
+      "Impact: Just a Prototype no real life impact yet, but it has the potential to save lives",
     ],
-    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node API"],
+    tech: ["React", "React-Router", "Axios", "Tailwind CSS", "Firebase", "Node API"],
     metrics: [
-      { label: "Load Time", value: "-40%" },
-      { label: "Users Served", value: "25K+" },
-      { label: "Revenue Impact", value: "+18%" },
-      { label: "API Integrations", value: "6" },
-      { label: "Performance Score", value: "96/100" },
+      { label: "Largest Contentful Paint (LCP)", value: "909ms" },
+      { label: "Accessibility", value: "90/100" },
+      { label: "Best Practices", value: "100/100" },
+      { label: "SEO", value: "90/100" },
+      { label: "Performance Score", value: "91/100" },
     ],
-    liveDemo: "https://example.com/ecommerce",
-    viewCode: "https://github.com/mjh-dev/ecommerce-redesign",
-    preview: "/window.svg",
+    liveDemo: "https://dulcet-biscotti-7b5c0b.netlify.app/",
+    viewCode: "https://github.com/mjh-shikder/A-11-Red-Hope-Front-end",
+    preview: "/images/redhope.png",
     glow: "from-cyan-300/40 via-sky-300/20 to-violet-300/35",
   },
   {
@@ -137,7 +137,7 @@ export default function FeaturedProjects() {
                 <div className="grid items-center gap-7 lg:grid-cols-12">
                   <div className={`${reverseLayout ? "lg:order-2" : ""} lg:col-span-5`}>
                     <div
-                      className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${project.glow} p-[1px]`}
+                      className={`relative overflow-hidden rounded-2xl bg-linear-to-br ${project.glow} p-[1px]`}
                     >
                       <div className="relative overflow-hidden rounded-[15px] border border-border-subtle bg-background-secondary">
                         <div className="pointer-events-none absolute -top-16 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-cyan-300/20 blur-3xl" />
@@ -147,9 +147,9 @@ export default function FeaturedProjects() {
                             alt={`${project.name} preview`}
                             fill
                             sizes="(max-width: 1024px) 100vw, 40vw"
-                            className="object-contain p-12 transition-transform duration-500 ease-out group-hover:scale-105"
+                            className=" object-cover object-top transition-transform duration-500 ease-out hover:object-bottom"
                           />
-                          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background-secondary/70 via-transparent to-transparent" />
+                          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background-secondary/70 via-transparent to-transparent" />
                         </div>
                       </div>
                     </div>
