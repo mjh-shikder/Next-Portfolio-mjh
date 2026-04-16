@@ -13,7 +13,7 @@ import {
 
 const educationItems = [
   {
-    degree: "Honors, Social Work",
+    degree: "BSS, Social Work",
     institution: "National University Bangladesh, Abu Dharr Ghifari College",
     year: "Ongoing",
     specialization: "Building strong social research foundations with analytical thinking.",
@@ -35,7 +35,7 @@ const certifications = [
   {
     title: "Next Level Web Development",
     issuer: "Programming Hero",
-    year: "Present",
+    year: "Running",
     verified: true,
     link: "",
     focus: "Advanced full-stack engineering, AI-Driven Software Engineering, system design, and production-grade architecture.",
@@ -43,27 +43,27 @@ const certifications = [
   {
     title: "Complete Web Development",
     issuer: "Programming Hero",
-    year: "2025-2026",
+    year: "2026",
     verified: true,
     link: "",
     focus: "Full-stack web engineering with modern React ecosystem practices.",
   },
   {
-    title: "Ethical Hacking Course",
-    issuer: "Creative IT Institute, Bangladesh",
-    year: "6 Months",
-    verified: true,
-    link: "",
-    focus: "Security fundamentals, threat modeling, and defensive engineering workflows.",
-  },
-  {
     title: "Web Penetration Testing Course",
     issuer: "Cyber Bangla Academy",
-    year: "6 Months",
+    year: "2025",
     verified: true,
     link: "",
     focus: "Hands-on vulnerability analysis and secure web application hardening.",
   },
+  {
+    title: "Ethical Hacking Course",
+    issuer: "Creative IT Institute, Bangladesh",
+    year: "2025",
+    verified: true,
+    link: "",
+    focus: "Security fundamentals, threat modeling, and defensive engineering workflows.",
+  }
 ];
 
 const currentlyExploring = [
