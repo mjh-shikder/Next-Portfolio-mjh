@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <SmoothScroll>
             <NavbarWrapper />
-            <main className="flex-grow">
+            <main className="grow">
               {children}
             </main>
             <Footer />

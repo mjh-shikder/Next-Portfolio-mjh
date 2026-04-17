@@ -35,7 +35,7 @@ const certifications = [
   {
     title: "Next Level Web Development",
     issuer: "Programming Hero",
-    year: "Running",
+    year: "Ongoing",
     verified: true,
     link: "",
     focus: "Advanced full-stack engineering, AI-Driven Software Engineering, system design, and production-grade architecture.",

@@ -17,9 +17,7 @@ export default function Home() {
       <Skills />
       <EducationSection />
       <FeaturedProjects />
-
       <ContactSection />
-      
     </>
   );
 }
