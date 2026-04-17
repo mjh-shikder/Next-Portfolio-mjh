@@ -28,6 +28,14 @@ const educationItems = [
     honors: "Intermediate and Secondary Education Boards Bangladesh Examination",
     coursework: ["Social Work", "Economics", "Logic", "Civics"],
   },
+  {
+    degree: "SSC, Commerce",
+    institution: "Jurain Govt High School",
+    year: "2021",
+    specialization: "Dhaka Board",
+    honors: "Secondary School Certificate Examination",
+    coursework: ["Business Studies", "Accounting", "Finance", "Entrepreneurship"],
+  }
 
 ];
 

@@ -98,9 +98,10 @@ export default async function ProjectDetails({ params }) {
                                     <li>User can register and login</li>
                                     <li>User can search for blood donors</li>
                                     <li>Filter search donors by blood group and Location</li>
-                                    <li>User can request blood</li>
+                                    <li>User can request for blood</li>
                                     <li>User can donate blood </li>
                                     <li>User can Edit their profile</li>
+                                    <li>Stripe Payment Method</li>
                                     
                                 </ul>
                             </p>
