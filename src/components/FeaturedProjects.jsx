@@ -137,11 +137,11 @@ export default function FeaturedProjects() {
                 <div className="grid items-center gap-7 lg:grid-cols-12">
                   <div className={`${reverseLayout ? "lg:order-2" : ""} lg:col-span-5`}>
                     <div
-                      className={`relative overflow-hidden rounded-2xl bg-linear-to-br ${project.glow} p-[1px]`}
+                      className={`relative overflow-hidden rounded-2xl bg-linear-to-br ${project.glow} p-px`}
                     >
                       <div className="relative overflow-hidden rounded-[15px] border border-border-subtle bg-background-secondary">
                         <div className="pointer-events-none absolute -top-16 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-cyan-300/20 blur-3xl" />
-                        <div className="relative aspect-[16/10]">
+                        <div className="relative aspect-16/10">
                           <Image
                             src={project.preview}
                             alt={`${project.name} preview`}
@@ -252,7 +252,7 @@ export default function FeaturedProjects() {
           <Link
             href="/projects"
             aria-label="Explore all projects"
-            className="inline-flex items-center gap-2 rounded-2xl border border-cyan-300/35 bg-gradient-to-r from-cyan-300/12 to-violet-300/12 px-7 py-3.5 text-sm font-medium text-cyan-100 shadow-[0_0_0_rgba(34,211,238,0)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/80"
+            className="inline-flex items-center gap-2 rounded-2xl border border-cyan-300/35 bg-linear-to-r from-cyan-300/12 to-violet-300/12 px-7 py-3.5 text-sm font-medium text-cyan-100 shadow-[0_0_0_rgba(34,211,238,0)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/80"
           >
             Explore All Projects
             <ArrowUpRight className="h-4 w-4" />

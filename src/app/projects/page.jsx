@@ -109,7 +109,7 @@ export default function ProjectsPage() {
             All <span className="text-gradient">Projects</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
-            Every project I've shipped — from e-commerce platforms and security dashboards to 3D
+            Every project I&apos;ve shipped — from e-commerce platforms and security dashboards to 3D
             experiences and mobile apps. Filter by technology to find what interests you.
           </p>
         </motion.div>
@@ -174,10 +174,10 @@ export default function ProjectsPage() {
                     className="group flex flex-col rounded-3xl border border-border-subtle bg-card-background backdrop-blur-sm overflow-hidden"
                   >
                     {/* Top gradient bar */}
-                    <div className={`h-[2px] w-full bg-gradient-to-r ${glow} opacity-70`} />
+                    <div className={`h-[2px] w-full bg-linear-to-r ${glow} opacity-70`} />
 
                     {/* Preview area */}
-                    <div className={`relative overflow-hidden bg-gradient-to-br ${glow} p-[1px] mx-5 mt-5 rounded-2xl`}>
+                    <div className={`relative overflow-hidden bg-linear-to-br ${glow} p-px mx-5 mt-5 rounded-2xl`}>
                       <div className="relative rounded-[15px] bg-background-secondary overflow-hidden">
                         <div className="pointer-events-none absolute -top-12 left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-cyan-300/15 blur-3xl" />
                         <div className="flex h-36 items-center justify-center">

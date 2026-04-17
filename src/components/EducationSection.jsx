@@ -148,7 +148,7 @@ export default function EducationSection() {
               return (
                 <article
                   key={`${item.degree}-${item.year}`}
-                  className="rounded-[1.45rem] bg-gradient-to-br from-cyan-300/30 via-violet-300/20 to-transparent p-[1px]"
+                  className="rounded-[1.45rem] bg-linear-to-br from-cyan-300/30 via-violet-300/20 to-transparent p-px"
                 >
                   <motion.div
                     whileHover={{ y: -3 }}

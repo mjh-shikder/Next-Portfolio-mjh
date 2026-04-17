@@ -17,7 +17,7 @@ export default function NotFound() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="mx-auto max-w-2xl text-center"
       >
-        <p className="text-base font-semibold leading-8 text-5xl text-accent-primary">404</p>
+        <p className="font-semibold leading-8 text-5xl text-accent-primary">404</p>
         <h1 className="mt-4 text-balance text-[2.4rem] font-semibold leading-[1.04] tracking-[-0.03em] text-text-primary sm:text-6xl lg:text-7xl">
           Page not found
         </h1>
@@ -30,9 +30,9 @@ export default function NotFound() {
             <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group relative inline-flex items-center gap-2 rounded-xl border border-accent-primary/45 bg-gradient-to-r from-cyan-400/18 to-violet-400/16 px-6 py-3.5 text-sm font-medium text-accent-primary shadow-[0_0_0_rgba(6,182,212,0)] outline-none transition-all duration-300 hover:shadow-[0_0_30px_var(--accent-glow)] focus-visible:ring-2 focus-visible:ring-accent-primary/70"
+              className="group relative inline-flex items-center gap-2 rounded-xl border border-accent-primary/45 bg-linear-to-r from-cyan-400/18 to-violet-400/16 px-6 py-3.5 text-sm font-medium text-accent-primary shadow-[0_0_0_rgba(6,182,212,0)] outline-none transition-all duration-300 hover:shadow-[0_0_30px_var(--accent-glow)] focus-visible:ring-2 focus-visible:ring-accent-primary/70"
             >
-              <span className="pointer-events-none absolute -inset-[1px] rounded-xl border border-transparent bg-[linear-gradient(120deg,rgba(34,211,238,0.55),rgba(167,139,250,0.5),rgba(34,211,238,0.55))] opacity-0 blur-[0.5px] transition-opacity duration-300 group-hover:opacity-100" />
+              <span className="pointer-events-none absolute -inset-1px rounded-xl border border-transparent bg-[linear-gradient(120deg,rgba(34,211,238,0.55),rgba(167,139,250,0.5),rgba(34,211,238,0.55))] opacity-0 blur-[0.5px] transition-opacity duration-300 group-hover:opacity-100" />
               <Home className="relative h-4 w-4" />
               <span className="relative">Back to home</span>
             </motion.div>
