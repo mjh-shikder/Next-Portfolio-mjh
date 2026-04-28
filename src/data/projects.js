@@ -25,15 +25,15 @@ export const demoProjects = [
     },
     {
         id: "3",
-        title: "My Digital Garden",
-        tech: ["React", "D3.js", "Tailwind CSS"],
-        shortDesc: "Data visualization dashboard tracking real-time network vulnerabilities and penetration testing metrics.",
-        description: "Drawing from my Ethical Hacking and Penetration Testing courses, I built a frontend application that ingests simulated vulnerability data and visualizes threat levels across different nodes.",
-        image: "/project-3.jpg",
-        liveLink: "https://example.com/dash",
-        githubLink: "https://github.com/mjh-dev/cyber-dashboard",
-        challenges: "Managing real-time WebSocket data floods without locking up the React thread, requiring extensive memoization and batch state updates.",
-        futurePlans: "Connecting the dashboard to real backend SIEM APIs to process actual packet monitoring logs."
+        title: "Toy Kingdom",
+        tech: ["React", "React-Router", "Firebase", "Node API", "Tailwind CSS"],
+        shortDesc: "A community driven platform for toy lovers.",
+        description: "This project is a community driven platform for toy lovers. It is a full-stack application that allows users to register as toy lovers or request toy products and services. It also has a feature that allows users to search for toy products and services based on their location.",
+        image: "/images/toykingdom.png",
+        liveLink: "https://mjhtoykingdom.netlify.app/",
+        githubLink: "https://github.com/mjh-shikder/A-09-Toy-Kingdom-Web-App",
+        challenges: "The main challenge was to create a user-friendly interface that could be used by people of all ages. I also had to make sure that the website was responsive and could be used on different devices. Additionally, I had to make sure that the website was secure and that the data was protected.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
     },
     {
         id: "4",
