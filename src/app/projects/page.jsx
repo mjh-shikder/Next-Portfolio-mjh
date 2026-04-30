@@ -188,7 +188,7 @@ export default function ProjectsPage() {
                       <div className="relative rounded-[15px] bg-background-secondary overflow-hidden">
                         <div className="pointer-events-none absolute -top-12 left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-cyan-300/15 blur-3xl" />
                         <div className="flex h-36 items-center justify-center">
-                          <span className="text-4xl font-bold tracking-tight text-gradient select-none opacity-30 group-hover:opacity-50 transition-opacity duration-300">
+                          <span className="text-4xl font-bold tracking-tight text-gradient select-none">
                             {/* {project.title.split(" ").map((w) => w[0]).join("").slice(0, 3)} */}
                             <Image src={project.image} alt={project.title} fill className="object-cover object-top transition-transform duration-500 ease-out hover:object-bottom" />
                           
