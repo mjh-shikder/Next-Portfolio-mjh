@@ -89,7 +89,7 @@ export default async function ProjectDetails({ params }) {
                             <h2 className="text-2xl font-bold text-white mb-4 border-b border-gray-700 pb-2">Key Features</h2>
                             <p className="text-gray-400 leading-relaxed text-lg">
                                 {project.features}
-                                <ul className="list-disc list-inside" >
+                                {/* <ul className="list-disc list-inside" >
                                     <li>Role based authentication and authorization</li>
                                     <li>Admin Dashboard to manage blood Users</li>
                                     <li>Admin can block and unblock users</li>
@@ -103,7 +103,7 @@ export default async function ProjectDetails({ params }) {
                                     <li>User can Edit their profile</li>
                                     <li>Stripe Payment Method</li>
                                     
-                                </ul>
+                                </ul> */}
                             </p>
                         </div>
                         {/* Challenges */}

@@ -106,5 +106,17 @@ export const demoProjects = [
         githubLink: "https://github.com/mjh-shikder/Legal-solution-website",
         challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
         futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
+    },
+    {
+        id: "10",
+        title: "G3 Architects",
+        tech: ["HTML", "CSS"],
+        shortDesc: "A architecture website made with raw HTML and CSS codes",
+        description: "This is an architecture website made with raw HTML and CSS codes",
+        image: "/images/g3architects.png",
+        liveLink: "https://mjh-shikder.github.io/G3-Architects/",
+        githubLink: "https://github.com/mjh-shikder/G3-Architects",
+        challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
     }
 ];
