@@ -40,7 +40,7 @@ export const demoProjects = [
         title: "MJH.io Apps Store",
         tech: ["React", "React-Router", "Tailwind CSS", "Daisy UI", "React Icons", "ReactToastify"],
         shortDesc: "A Online Productive Apps Store",
-        description: "This project is a online productive apps store that allows users to download and install productive apps. It is a full-stack application that allows users to register as toy lovers or request toy products and services. It also has a feature that allows users to search for toy products and services based on their location.",
+        description: "This project is a online productive apps store that allows users to download and install productive apps.",
         image: "/images/mjhio.png",
         liveLink: "https://mjhio.netlify.app/",
         githubLink: "https://github.com/mjh-shikder/A-08-mjh.io_Website",
@@ -52,7 +52,7 @@ export const demoProjects = [
         title: "CS- Ticket System",
         tech: ["React", "React-Router", "Tailwind CSS", "Daisy UI", "React Icons", "ReactToastify"],
         shortDesc: "A customer support website for ordering and tracking product services",
-        description: "This project is a customer support website that allows users to order and track product services. It is a full-stack application that allows users to register as a customer support agent or request customer support services. It also has a feature that allows users to search for customer support services based on their location.",
+        description: "This project is a customer support website that allows users to order and track product services.",
         image: "/images/customerSupport.png",
         liveLink: "https://mjhcustomersupport.netlify.app/",
         githubLink: "https://github.com/mjh-shikder/A-07-Customer_Support_Website",
@@ -62,13 +62,49 @@ export const demoProjects = [
     {
         id: "6",
         title: "Green Earth",
-        tech: ["HTML", "Tailwind CSS", "JavaScript"],
+        tech: ["HTML", "Tailwind CSS", "Daisy UI", "JavaScript"],
         shortDesc: "Green Earth is a website for environmental protection and conservation.",
-        description: "Green Earth is a website for environmental protection and conservation. It is a full-stack application that allows users to register as environmental protection agents or request environmental protection services. It also has a feature that allows users to search for environmental protection services based on their location.",
+        description: "Green Earth is a website for environmental protection and conservation.",
         image: "/images/greenearth.png",
         liveLink: "https://mjh-shikder.github.io/A-06-Green_Earth_Website/",
         githubLink: "https://github.com/mjh-shikder/A-06-Green_Earth_Website",
-        challenges: "Handling image caching effectively within React Native's flat list and managing real-time listener unsubscribes for Firebase to prevent memory leaks.",
-        futurePlans: "Adding short-form video support similar to TikTok for artists to share quick work-in-progress timelapses."
+        challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
+    },
+    {
+        id: "7",
+        title: "Emergency Hotline Service",
+        tech: ["HTML", "Tailwind CSS", "Daisy UI", "JavaScript"],
+        shortDesc: "Emergency Hotline Service is a website for emergency services.",
+        description: "Emergency Hotline Service is a website for emergency services.",
+        image: "/images/emergencyhotline.png",
+        liveLink: "https://mjh-shikder.github.io/A-05-Emergency_Hotline_Website/",
+        githubLink: "https://github.com/mjh-shikder/A-05-Emergency_Hotline_Website",
+        challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
+    },
+    {
+        id: "8",
+        title: "Bsic Portfolio With HTML & CSS",
+        tech: ["HTML", "CSS"],
+        shortDesc: "A basic portfolio website made with just HTML and CSS.",
+        description: "This is a basic portfolio website made with raw HTML and CSS codes.",
+        image: "/images/basicportfolio.png",
+        liveLink: "https://mjh-shikder.github.io/portfolio/",
+        githubLink: "https://github.com/mjh-shikder/portfolio",
+        challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
+    },
+    {
+        id: "9",
+        title: "Legal Solution Website with HTML & CSS",
+        tech: ["HTML", "CSS"],
+        shortDesc: "A legal solution website with basic features.",
+        description: "This is a legal solution website made with raw HTML and CSS codes",
+        image: "/images/legalsolution.png",
+        liveLink: "https://mjh-shikder.github.io/Legal-solution-website/",
+        githubLink: "https://github.com/mjh-shikder/Legal-solution-website",
+        challenges: "It was challenging to make the website responsive and ensure that it could be used on different devices.",
+        futurePlans: "Want to add more features like user authentication, toy bank integration, and a mobile app."
     }
 ];
